@@ -15,7 +15,11 @@ public class BuilderPatternPizza {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Pizza pizza = new Pizza.Builder(12)
+                .cheese(true)
+                .pepperoni(true)
+                .bacon(true)
+                .build();
     }
     
 }
